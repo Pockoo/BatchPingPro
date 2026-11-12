@@ -20,7 +20,7 @@ Windows 下的批量 IP 测速小工具。把一堆 IP 丢进去，几秒钟就�
 | ICMPING | 普通 ping，只测延迟 |
 | TCPING | 对 IP:端口 做 TCP 握手，耗时即延迟 |
 | SNIPROXY | 直连 IP:端口，带上指定域名的 SNI / Host 请求，读取 HTTP 状态码和访问耗时（端口 80 走 HTTP，其余走 HTTPS） |
-| DNS | 把 IP 当 DNS 服务器，解析指定域名的 A / AAAA 记录，记录解析耗时 |
+| DNS | 把 IP 当 DNS 服务器，解析指定域名的 A / AAAA 记录；STATUS 列显示解析到的记录数，LOADING 列显示解析耗时 |
 
 后三种会同时测 ICMPING，结果各占一列。不写端口时，TCPING 默认 80，SNIPROXY 默认 443，DNS 默认 53，也可以在端口框里统一指定。
 
@@ -48,7 +48,7 @@ Windows 下的批量 IP 测速小工具。把一堆 IP 丢进去，几秒钟就�
 ## 使用
 
 1. 到 Releases 下载压缩包，解压后运行 `BatchPingPro.exe`。
-2. 想要离线归属地（默认已提供），把下面两个文件放在 exe 同目录（`ip2asn` 的 tsv 也可以放在 `data` 子目录或上一级目录）：
+2. 想要离线归属地，把下面两个文件放在 exe 同目录（`ip2asn` 的 tsv 也可以放在 `data` 子目录或上一级目录）：
    - `ip2region_v4.xdb`，来自 [ip2region](https://github.com/lionsoul2014/ip2region)
    - `ip2asn-combined.tsv` 或 `ip2asn-combined.tsv.gz`，来自 [iptoasn.com](https://iptoasn.com/)
 3. 粘贴或导入 IP，选测试方式，点“开始”。
