@@ -48,7 +48,7 @@ Windows 下的批量 IP 测速小工具。把一堆 IP 丢进去，几秒钟就�
 ## 使用
 
 1. 到 Releases 下载压缩包，解压后运行 `BatchPingPro.exe`。
-2. 想要离线归属地，把下面两个文件放在 exe 同目录（`ip2asn` 的 tsv 也可以放在 `data` 子目录或上一级目录）：
+2. 想要离线归属地（默认已提供），把下面两个文件放在 exe 同目录（`ip2asn` 的 tsv 也可以放在 `data` 子目录或上一级目录）：
    - `ip2region_v4.xdb`，来自 [ip2region](https://github.com/lionsoul2014/ip2region)
    - `ip2asn-combined.tsv` 或 `ip2asn-combined.tsv.gz`，来自 [iptoasn.com](https://iptoasn.com/)
 3. 粘贴或导入 IP，选测试方式，点“开始”。
@@ -76,14 +76,8 @@ Windows 下的批量 IP 测速小工具。把一堆 IP 丢进去，几秒钟就�
 
 ## 自己编译
 
-需要 Visual Studio 2022（装了“使用 C++ 的桌面开发”），在源码目录运行 `build.bat` 即可，编译完成后会自动启动程序。也可以直接用 VS 打开 `BatchPingPro.sln`，选择 Release / x64。
-
-C++17，静态链接 CRT，不需要额外的运行库。
+暂时未开源
 
 ## 反馈
 
 使用中遇到问题或有想法，欢迎到 [Issues](https://github.com/Pockoo/BatchPingPro/issues) 留言。
-
-## 更新记录
-
-见 [changelog.md](changelog.md)。
