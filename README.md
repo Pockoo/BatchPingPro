@@ -1,6 +1,6 @@
 # BatchPingPro
 
-![程序主界面](img/AeroSnap01.PNG)
+![程序主界面](img/AeroSnap01.png)
 
 Windows 下的批量 IP 测速小工具。把一堆 IP 丢进去，几秒钟就能看出哪些通、哪些快、各自在哪个国家和运营商，适合从 CDN 或代理节点的 IP 池里挑可用的那几个。
 
