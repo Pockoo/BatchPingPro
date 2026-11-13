@@ -49,7 +49,7 @@ Windows 下的批量 IP 测速小工具。把一堆 IP 丢进去，几秒钟就�
 
 ## 使用
 
-1. 到 Releases 下载压缩包，解压后运行 `BatchPingPro.exe`。
+1. 到 [Releases](https://github.com/Pockoo/BatchPingPro/releases) 下载压缩包，解压后运行 `BatchPingPro.exe`。
 2. 想要离线归属地，把下面两个文件放在 exe 同目录（`ip2asn` 的 tsv 也可以放在 `data` 子目录或上一级目录）：
    - `ip2region_v4.xdb`，来自 [ip2region](https://github.com/lionsoul2014/ip2region)
    - `ip2asn-combined.tsv` 或 `ip2asn-combined.tsv.gz`，来自 [iptoasn.com](https://iptoasn.com/)
